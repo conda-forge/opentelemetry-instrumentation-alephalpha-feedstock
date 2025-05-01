@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-alephalpha" %}
-{% set version = "0.39.4" %}
+{% set version = "0.40.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_alephalpha-{{ version }}.tar.gz
-  sha256: 913157bff8535cac9319376c142a8cafffd76d668e4dc61aecb1e8cbfe02a5a3
+  sha256: 57289870fdad546f4f898eb147de317bda60a3d1642008ad57ca3af3aa11db80
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - opentelemetry-api >=1.28.0,<2.0.0
     - opentelemetry-instrumentation >=0.50b0
     - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai 0.4.3
+    - opentelemetry-semantic-conventions-ai 0.4.5
 
 test:
   imports:
