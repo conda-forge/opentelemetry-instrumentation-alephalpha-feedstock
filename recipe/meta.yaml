@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-alephalpha" %}
-{% set version = "0.44.2" %}
+{% set version = "0.44.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_alephalpha-{{ version }}.tar.gz
-  sha256: 38c0949cb4bd7fe24a263c17552e5b9c152192343b1ee94408f624c6a150de12
+  sha256: 409d53a33c37f484799d0233bbf09317b4f384d895042e2c69a9991a8a19796f
 
 build:
   noarch: python
