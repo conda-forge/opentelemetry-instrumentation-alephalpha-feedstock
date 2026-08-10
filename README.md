@@ -44,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `opentelemetry-instrumentation-alephalpha` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install opentelemetry-instrumentation-alephalpha
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install opentelemetry-instrumentation-alephalpha
 ```
 
-It is possible to list all of the versions of `opentelemetry-instrumentation-alephalpha` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add opentelemetry-instrumentation-alephalpha
+# for installing globally
+pixi global install opentelemetry-instrumentation-alephalpha
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `opentelemetry-instrumentation-alephalpha` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search opentelemetry-instrumentation-alephalpha --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search opentelemetry-instrumentation-alephalpha --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search opentelemetry-instrumentation-alephalpha --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -80,6 +122,8 @@ mamba repoquery whoneeds opentelemetry-instrumentation-alephalpha --channel cond
 # List dependencies of `opentelemetry-instrumentation-alephalpha`:
 mamba repoquery depends opentelemetry-instrumentation-alephalpha --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
