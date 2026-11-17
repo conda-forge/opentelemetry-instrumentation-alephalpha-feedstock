@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-alephalpha
-  version: "0.63.0"
+  version: "0.63.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_alephalpha-${{ version }}.tar.gz
-  sha256: 46541c8d4fb2ee90f3111d25ff5c0cb57d8dbec0a4ef0bf3f7a067980a42c643
+  sha256: 2dc3366ba2b338fd4236fcca0ab74ecfa5daa78aba82bef4fce63e40fde369e8
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
